@@ -12,7 +12,7 @@ patientData$BloodGroup=bg
 patientData
 
 
-
+#install tibble for add_column and add_row
 install.packages("tibble")
 library(tibble)
 
@@ -20,6 +20,13 @@ g=c('M','f','f')
 patientData=add_column(patientData, g, .after = 2)
 patientData
 
-newrow=c(2, 6, 'f',    'Type3',        'b+')
+newrow=c(2, 6,'f','Type3','b+')
 updatedTable=rbind(patientData,newrow)
 updatedTable
+
+patientData<-updatedTable
+
+
+# Remove specified row by index 
+patientData <- patientData[-4,]
+patientData
