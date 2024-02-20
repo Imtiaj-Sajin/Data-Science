@@ -44,3 +44,13 @@ library(tibble)
 g=c('M','f','f')
 mydata=add_column(mydata, g, .after = 2)
 mydata
+
+
+
+#annoting datasets
+
+mydata$g=factor(mydata$g,
+                levels=c("m",'f'),
+                labels = c(1,2)) #values convert to 1,2
+mydata
+
