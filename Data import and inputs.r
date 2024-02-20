@@ -14,7 +14,6 @@ print(var2)
 x=scan()
 print(x)
 
-
 s=scan(what="") #scan strings
 print(s)
 
@@ -24,3 +23,8 @@ print(d)
 c=scan(what=character()) #scan character
 print(d)
 
+
+
+#Entering data to dataframe
+mydata=data.frame(age=numeric(0),gender=character(0),weight=numeric(0),name="")
+mydata=edit(mydata)
