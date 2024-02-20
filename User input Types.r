@@ -13,3 +13,14 @@ print(var2)
 ##scan()
 x=scan()
 print(x)
+
+
+s=scan(what="") #scan strings
+print(s)
+
+d=scan(what=double()) #scan double
+print(d)
+
+c=scan(what=character()) #scan character
+print(d)
+
