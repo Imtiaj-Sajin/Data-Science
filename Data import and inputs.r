@@ -24,9 +24,8 @@ c=scan(what=character()) #scan character
 print(d)
 
 
-
 #Entering data to dataframe
-mydata=data.frame(age=numeric(0),gender=character(0),weight=numeric(0),name="")
+mydata=data.frame(age=numeric(0),Name=character(0),weight=numeric(0),name="")
 mydata=edit(mydata)
 
 
@@ -35,3 +34,13 @@ mydata=edit(mydata)
 csvData=read.csv("C:/Users/student/Downloads/customer.csv",header=TRUE, sep=",") #your csv file location
 csvData
 csvData=edit(csvData)
+
+
+#add column
+mydata
+install.packages("tibble")
+library(tibble)
+
+g=c('M','f','f')
+mydata=add_column(mydata, g, .after = 2)
+mydata
