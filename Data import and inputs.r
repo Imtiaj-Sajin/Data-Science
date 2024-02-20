@@ -28,3 +28,10 @@ print(d)
 #Entering data to dataframe
 mydata=data.frame(age=numeric(0),gender=character(0),weight=numeric(0),name="")
 mydata=edit(mydata)
+
+
+
+#import from csv
+csvData=read.csv("C:/Users/student/Downloads/customer.csv",header=TRUE, sep=",") #your csv file location
+csvData
+csvData=edit(csvData)
