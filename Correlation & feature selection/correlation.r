@@ -79,3 +79,4 @@ anova_result <- data.frame(Attribute = c("Pregnancies", "Glucose", "BloodPressur
                            P_Value_Outcome = p_values_outcome)
 
 anova_result
+pearson_result
